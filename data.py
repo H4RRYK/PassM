@@ -51,8 +51,9 @@ def show(Entered_Password,URL):
         print("----------------------------------------------------------------")
         for i in File_R:
             Content = i.split(" || ")
-            print ("Site"+"\t\t"+"Username"+"\t"+"E-Mail"+"\t\t\t"+"Password")
-            print (Content[0]+'\t\t'+Content[1]+'\t\t'+Content[2]+'\t\t'+Content[3])
+            if Content[0] != "\n"
+                print ("Site"+"\t\t"+"Username"+"\t"+"E-Mail"+"\t\t\t"+"Password")
+                print (Content[0]+'\t\t'+Content[1]+'\t\t'+Content[2]+'\t\t'+Content[3])
         encrypt(Entered_Password)    
     else:
         print("----------------------------------------------------------------")
