@@ -37,9 +37,9 @@ def decrypt(Entered_Password):
 
 def add(Entered_Password,URL,User,Password,Email):
     decrypt(Entered_Password)
-    File_A = open("data","ab")
+    File_A = open("data","a")
     Data = URL+" || " +User+" || " +Password+" || " +Email+"\n"
-    Content = Data.encode()
+    Content = Data
     write = File_A.write(Content)
     File_A.close()
     encrypt(Entered_Password)
