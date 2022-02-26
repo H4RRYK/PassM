@@ -99,6 +99,7 @@ def main():
             int_table()
 
         else:
+            os.system('cls')
             sys.exit()
 
     if args.add:
